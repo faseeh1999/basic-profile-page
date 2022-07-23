@@ -1,0 +1,63 @@
+body{
+  background-color: beige;
+  padding: 3%;
+  margin: auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr;
+  column-gap: 20px;
+  gap: 4px;
+}
+
+.name,.short-description{
+  font-weight: bold;
+  font-size: large;
+  margin: 3%;
+}
+.geek-img{
+  max-width: 20%;
+  height: auto;
+  border-radius: 5%;
+  margin: 3%;
+}
+.contact h3, .contact h4, .hobbies h3, .games h3{
+font-weight: bold;
+font-size: large;
+margin: 3%;
+}
+.details,.hobbies ul, .games ul{
+  font-weight: normal;
+  font-size: medium;
+  margin: 3%;
+  word-spacing: 5px;
+  justify-content: center;
+  align-items: center;
+  line-height: 150%;
+}
+.details{
+  font-style: italic;
+}
+.hobbies ul, .games ul {
+  list-style: disc;
+}
+.hobbies ul li, .games ul li {
+  margin: 3%;
+}
+
+.name:hover {
+  color: rgb(0, 115, 255);
+}
+.contact h3:hover{
+  color: green;
+}
+
+@media screen and (max-width: 600px) {
+  .row {
+    grid-template-columns: 100%;
+  }
+}
+
